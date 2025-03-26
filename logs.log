@@ -1,0 +1,1544 @@
+2025-03-26 13:02:09,657:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-03-26 13:13:12,351:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-03-26 13:59:16,237:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-26 13:59:16,237:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-26 13:59:16,237:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-26 13:59:16,238:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-03-26 13:59:16,268:INFO:PyCaret RegressionExperiment
+2025-03-26 13:59:16,268:INFO:Logging name: reg-default-name
+2025-03-26 13:59:16,268:INFO:ML Usecase: MLUsecase.REGRESSION
+2025-03-26 13:59:16,268:INFO:version 3.3.2
+2025-03-26 13:59:16,268:INFO:Initializing setup()
+2025-03-26 13:59:16,268:INFO:self.USI: 2565
+2025-03-26 13:59:16,268:INFO:self._variable_keys: {'seed', 'idx', 'exp_name_log', 'html_param', 'gpu_n_jobs_param', 'gpu_param', 'y_test', 'logging_param', 'transform_target_param', 'target_param', 'y_train', 'memory', 'X', '_available_plots', 'y', '_ml_usecase', 'X_test', 'USI', 'X_train', 'pipeline', 'exp_id', 'n_jobs_param', 'fold_generator', 'fold_shuffle_param', 'fold_groups_param', 'log_plots_param', 'data'}
+2025-03-26 13:59:16,268:INFO:Checking environment
+2025-03-26 13:59:16,268:INFO:python_version: 3.9.18
+2025-03-26 13:59:16,268:INFO:python_build: ('main', 'Sep 11 2023 14:09:26')
+2025-03-26 13:59:16,268:INFO:machine: AMD64
+2025-03-26 13:59:16,268:INFO:platform: Windows-10-10.0.26100-SP0
+2025-03-26 13:59:16,268:INFO:Memory: svmem(total=16931676160, available=4380262400, percent=74.1, used=12551413760, free=4380262400)
+2025-03-26 13:59:16,270:INFO:Physical Core: 6
+2025-03-26 13:59:16,270:INFO:Logical Core: 12
+2025-03-26 13:59:16,270:INFO:Checking libraries
+2025-03-26 13:59:16,270:INFO:System:
+2025-03-26 13:59:16,270:INFO:    python: 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)]
+2025-03-26 13:59:16,270:INFO:executable: c:\Users\Kelvin Rizky\miniconda3\python.exe
+2025-03-26 13:59:16,270:INFO:   machine: Windows-10-10.0.26100-SP0
+2025-03-26 13:59:16,270:INFO:PyCaret required dependencies:
+2025-03-26 13:59:16,867:INFO:                 pip: 25.0.1
+2025-03-26 13:59:16,867:INFO:          setuptools: 68.2.2
+2025-03-26 13:59:16,868:INFO:             pycaret: 3.3.2
+2025-03-26 13:59:16,868:INFO:             IPython: 8.18.1
+2025-03-26 13:59:16,868:INFO:          ipywidgets: 8.1.2
+2025-03-26 13:59:16,868:INFO:                tqdm: 4.67.1
+2025-03-26 13:59:16,868:INFO:               numpy: 1.26.3
+2025-03-26 13:59:16,868:INFO:              pandas: 2.1.4
+2025-03-26 13:59:16,868:INFO:              jinja2: 3.1.3
+2025-03-26 13:59:16,868:INFO:               scipy: 1.11.4
+2025-03-26 13:59:16,868:INFO:              joblib: 1.3.2
+2025-03-26 13:59:16,868:INFO:             sklearn: 1.4.2
+2025-03-26 13:59:16,868:INFO:                pyod: 2.0.4
+2025-03-26 13:59:16,868:INFO:            imblearn: 0.12.4
+2025-03-26 13:59:16,868:INFO:   category_encoders: 2.6.4
+2025-03-26 13:59:16,868:INFO:            lightgbm: 4.6.0
+2025-03-26 13:59:16,868:INFO:               numba: 0.60.0
+2025-03-26 13:59:16,868:INFO:            requests: 2.32.3
+2025-03-26 13:59:16,868:INFO:          matplotlib: 3.7.5
+2025-03-26 13:59:16,868:INFO:          scikitplot: 0.3.7
+2025-03-26 13:59:16,868:INFO:         yellowbrick: 1.5
+2025-03-26 13:59:16,868:INFO:              plotly: 5.19.0
+2025-03-26 13:59:16,868:INFO:    plotly-resampler: Not installed
+2025-03-26 13:59:16,868:INFO:             kaleido: 0.2.1
+2025-03-26 13:59:16,868:INFO:           schemdraw: 0.15
+2025-03-26 13:59:16,868:INFO:         statsmodels: 0.14.1
+2025-03-26 13:59:16,868:INFO:              sktime: 0.26.0
+2025-03-26 13:59:16,868:INFO:               tbats: 1.1.3
+2025-03-26 13:59:16,868:INFO:            pmdarima: 2.0.4
+2025-03-26 13:59:16,868:INFO:              psutil: 5.9.1
+2025-03-26 13:59:16,868:INFO:          markupsafe: 2.1.1
+2025-03-26 13:59:16,868:INFO:             pickle5: Not installed
+2025-03-26 13:59:16,868:INFO:         cloudpickle: 3.1.1
+2025-03-26 13:59:16,868:INFO:         deprecation: 2.1.0
+2025-03-26 13:59:16,868:INFO:              xxhash: 3.5.0
+2025-03-26 13:59:16,869:INFO:           wurlitzer: Not installed
+2025-03-26 13:59:16,869:INFO:PyCaret optional dependencies:
+2025-03-26 13:59:17,708:INFO:                shap: 0.44.1
+2025-03-26 13:59:17,708:INFO:           interpret: 0.6.9
+2025-03-26 13:59:17,708:INFO:                umap: 0.5.7
+2025-03-26 13:59:17,708:INFO:     ydata_profiling: 4.16.0
+2025-03-26 13:59:17,708:INFO:  explainerdashboard: 0.4.8
+2025-03-26 13:59:17,708:INFO:             autoviz: Not installed
+2025-03-26 13:59:17,708:INFO:           fairlearn: 0.7.0
+2025-03-26 13:59:17,708:INFO:          deepchecks: Not installed
+2025-03-26 13:59:17,708:INFO:             xgboost: 2.1.4
+2025-03-26 13:59:17,708:INFO:            catboost: 1.2.7
+2025-03-26 13:59:17,708:INFO:              kmodes: 0.12.2
+2025-03-26 13:59:17,708:INFO:             mlxtend: 0.23.4
+2025-03-26 13:59:17,708:INFO:       statsforecast: 1.5.0
+2025-03-26 13:59:17,708:INFO:        tune_sklearn: Not installed
+2025-03-26 13:59:17,708:INFO:                 ray: Not installed
+2025-03-26 13:59:17,709:INFO:            hyperopt: 0.2.7
+2025-03-26 13:59:17,709:INFO:              optuna: 4.2.1
+2025-03-26 13:59:17,709:INFO:               skopt: 0.10.2
+2025-03-26 13:59:17,709:INFO:              mlflow: 2.21.0
+2025-03-26 13:59:17,709:INFO:              gradio: Not installed
+2025-03-26 13:59:17,709:INFO:             fastapi: Not installed
+2025-03-26 13:59:17,709:INFO:             uvicorn: 0.27.0.post1
+2025-03-26 13:59:17,709:INFO:              m2cgen: 0.10.0
+2025-03-26 13:59:17,709:INFO:           evidently: 0.4.40
+2025-03-26 13:59:17,709:INFO:               fugue: 0.8.7
+2025-03-26 13:59:17,709:INFO:           streamlit: 1.31.1
+2025-03-26 13:59:17,709:INFO:             prophet: Not installed
+2025-03-26 13:59:17,709:INFO:None
+2025-03-26 13:59:17,709:INFO:Set up data.
+2025-03-26 13:59:17,714:INFO:Set up folding strategy.
+2025-03-26 13:59:17,714:INFO:Set up train/test split.
+2025-03-26 13:59:17,718:INFO:Set up index.
+2025-03-26 13:59:17,718:INFO:Assigning column types.
+2025-03-26 13:59:48,277:INFO:PyCaret RegressionExperiment
+2025-03-26 13:59:48,277:INFO:Logging name: reg-default-name
+2025-03-26 13:59:48,277:INFO:ML Usecase: MLUsecase.REGRESSION
+2025-03-26 13:59:48,277:INFO:version 3.3.2
+2025-03-26 13:59:48,277:INFO:Initializing setup()
+2025-03-26 13:59:48,278:INFO:self.USI: 926a
+2025-03-26 13:59:48,278:INFO:self._variable_keys: {'seed', 'idx', 'exp_name_log', 'html_param', 'gpu_n_jobs_param', 'gpu_param', 'y_test', 'logging_param', 'transform_target_param', 'target_param', 'y_train', 'memory', 'X', '_available_plots', 'y', '_ml_usecase', 'X_test', 'USI', 'X_train', 'pipeline', 'exp_id', 'n_jobs_param', 'fold_generator', 'fold_shuffle_param', 'fold_groups_param', 'log_plots_param', 'data'}
+2025-03-26 13:59:48,278:INFO:Checking environment
+2025-03-26 13:59:48,278:INFO:python_version: 3.9.18
+2025-03-26 13:59:48,278:INFO:python_build: ('main', 'Sep 11 2023 14:09:26')
+2025-03-26 13:59:48,278:INFO:machine: AMD64
+2025-03-26 13:59:48,278:INFO:platform: Windows-10-10.0.26100-SP0
+2025-03-26 13:59:48,278:INFO:Memory: svmem(total=16931676160, available=4214652928, percent=75.1, used=12717023232, free=4214652928)
+2025-03-26 13:59:48,278:INFO:Physical Core: 6
+2025-03-26 13:59:48,278:INFO:Logical Core: 12
+2025-03-26 13:59:48,278:INFO:Checking libraries
+2025-03-26 13:59:48,278:INFO:System:
+2025-03-26 13:59:48,278:INFO:    python: 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)]
+2025-03-26 13:59:48,278:INFO:executable: c:\Users\Kelvin Rizky\miniconda3\python.exe
+2025-03-26 13:59:48,278:INFO:   machine: Windows-10-10.0.26100-SP0
+2025-03-26 13:59:48,278:INFO:PyCaret required dependencies:
+2025-03-26 13:59:48,278:INFO:                 pip: 25.0.1
+2025-03-26 13:59:48,278:INFO:          setuptools: 68.2.2
+2025-03-26 13:59:48,278:INFO:             pycaret: 3.3.2
+2025-03-26 13:59:48,278:INFO:             IPython: 8.18.1
+2025-03-26 13:59:48,278:INFO:          ipywidgets: 8.1.2
+2025-03-26 13:59:48,278:INFO:                tqdm: 4.67.1
+2025-03-26 13:59:48,278:INFO:               numpy: 1.26.3
+2025-03-26 13:59:48,278:INFO:              pandas: 2.1.4
+2025-03-26 13:59:48,278:INFO:              jinja2: 3.1.3
+2025-03-26 13:59:48,278:INFO:               scipy: 1.11.4
+2025-03-26 13:59:48,278:INFO:              joblib: 1.3.2
+2025-03-26 13:59:48,280:INFO:             sklearn: 1.4.2
+2025-03-26 13:59:48,280:INFO:                pyod: 2.0.4
+2025-03-26 13:59:48,280:INFO:            imblearn: 0.12.4
+2025-03-26 13:59:48,280:INFO:   category_encoders: 2.6.4
+2025-03-26 13:59:48,280:INFO:            lightgbm: 4.6.0
+2025-03-26 13:59:48,280:INFO:               numba: 0.60.0
+2025-03-26 13:59:48,280:INFO:            requests: 2.32.3
+2025-03-26 13:59:48,280:INFO:          matplotlib: 3.7.5
+2025-03-26 13:59:48,280:INFO:          scikitplot: 0.3.7
+2025-03-26 13:59:48,280:INFO:         yellowbrick: 1.5
+2025-03-26 13:59:48,280:INFO:              plotly: 5.19.0
+2025-03-26 13:59:48,280:INFO:    plotly-resampler: Not installed
+2025-03-26 13:59:48,280:INFO:             kaleido: 0.2.1
+2025-03-26 13:59:48,280:INFO:           schemdraw: 0.15
+2025-03-26 13:59:48,280:INFO:         statsmodels: 0.14.1
+2025-03-26 13:59:48,280:INFO:              sktime: 0.26.0
+2025-03-26 13:59:48,280:INFO:               tbats: 1.1.3
+2025-03-26 13:59:48,280:INFO:            pmdarima: 2.0.4
+2025-03-26 13:59:48,280:INFO:              psutil: 5.9.1
+2025-03-26 13:59:48,280:INFO:          markupsafe: 2.1.1
+2025-03-26 13:59:48,280:INFO:             pickle5: Not installed
+2025-03-26 13:59:48,280:INFO:         cloudpickle: 3.1.1
+2025-03-26 13:59:48,280:INFO:         deprecation: 2.1.0
+2025-03-26 13:59:48,280:INFO:              xxhash: 3.5.0
+2025-03-26 13:59:48,281:INFO:           wurlitzer: Not installed
+2025-03-26 13:59:48,281:INFO:PyCaret optional dependencies:
+2025-03-26 13:59:48,281:INFO:                shap: 0.44.1
+2025-03-26 13:59:48,281:INFO:           interpret: 0.6.9
+2025-03-26 13:59:48,281:INFO:                umap: 0.5.7
+2025-03-26 13:59:48,281:INFO:     ydata_profiling: 4.16.0
+2025-03-26 13:59:48,281:INFO:  explainerdashboard: 0.4.8
+2025-03-26 13:59:48,281:INFO:             autoviz: Not installed
+2025-03-26 13:59:48,281:INFO:           fairlearn: 0.7.0
+2025-03-26 13:59:48,281:INFO:          deepchecks: Not installed
+2025-03-26 13:59:48,281:INFO:             xgboost: 2.1.4
+2025-03-26 13:59:48,281:INFO:            catboost: 1.2.7
+2025-03-26 13:59:48,281:INFO:              kmodes: 0.12.2
+2025-03-26 13:59:48,281:INFO:             mlxtend: 0.23.4
+2025-03-26 13:59:48,281:INFO:       statsforecast: 1.5.0
+2025-03-26 13:59:48,281:INFO:        tune_sklearn: Not installed
+2025-03-26 13:59:48,281:INFO:                 ray: Not installed
+2025-03-26 13:59:48,281:INFO:            hyperopt: 0.2.7
+2025-03-26 13:59:48,281:INFO:              optuna: 4.2.1
+2025-03-26 13:59:48,281:INFO:               skopt: 0.10.2
+2025-03-26 13:59:48,281:INFO:              mlflow: 2.21.0
+2025-03-26 13:59:48,281:INFO:              gradio: Not installed
+2025-03-26 13:59:48,281:INFO:             fastapi: Not installed
+2025-03-26 13:59:48,281:INFO:             uvicorn: 0.27.0.post1
+2025-03-26 13:59:48,281:INFO:              m2cgen: 0.10.0
+2025-03-26 13:59:48,281:INFO:           evidently: 0.4.40
+2025-03-26 13:59:48,281:INFO:               fugue: 0.8.7
+2025-03-26 13:59:48,281:INFO:           streamlit: 1.31.1
+2025-03-26 13:59:48,281:INFO:             prophet: Not installed
+2025-03-26 13:59:48,281:INFO:None
+2025-03-26 13:59:48,282:INFO:Set up data.
+2025-03-26 13:59:48,286:INFO:Set up folding strategy.
+2025-03-26 13:59:48,286:INFO:Set up train/test split.
+2025-03-26 13:59:48,289:INFO:Set up index.
+2025-03-26 13:59:48,289:INFO:Assigning column types.
+2025-03-26 13:59:48,293:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2025-03-26 13:59:48,293:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,297:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,300:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,350:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,387:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,387:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:48,391:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:48,503:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,507:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,511:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,562:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,601:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,601:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:48,613:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:48,615:INFO:Engine successfully changes for model 'lasso' to 'sklearn'.
+2025-03-26 13:59:48,622:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,629:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,689:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,726:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,726:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:48,728:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:48,733:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,736:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,789:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,828:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,828:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:48,830:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:48,831:INFO:Engine successfully changes for model 'ridge' to 'sklearn'.
+2025-03-26 13:59:48,839:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,898:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,940:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,941:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:48,943:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:48,952:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2025-03-26 13:59:48,999:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:49,037:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-26 13:59:49,037:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:49,040:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:49,040:INFO:Engine successfully changes for model 'en' to 'sklearn'.
+2025-03-26 13:59:49,097:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:49,138:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-26 13:59:49,138:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:49,141:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:49,198:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:49,240:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2025-03-26 13:59:49,241:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:49,243:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:49,244:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2025-03-26 13:59:49,305:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:49,344:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:49,346:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:49,404:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2025-03-26 13:59:49,443:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:49,445:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:49,445:INFO:Engine successfully changes for model 'svm' to 'sklearn'.
+2025-03-26 13:59:49,540:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:49,543:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:49,633:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:49,636:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:49,640:INFO:Preparing preprocessing pipeline...
+2025-03-26 13:59:49,640:INFO:Set up simple imputation.
+2025-03-26 13:59:49,640:INFO:Set up binning of numerical features.
+2025-03-26 13:59:49,642:INFO:Set up column transformation.
+2025-03-26 13:59:49,642:INFO:Set up feature normalization.
+2025-03-26 13:59:49,667:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 13:59:49,851:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+
+2025-03-26 13:59:49,859:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+
+2025-03-26 13:59:49,915:INFO:Finished creating preprocessing pipeline.
+2025-03-26 13:59:49,923:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\KELVIN~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['crim', 'zn', 'indus', 'chas',
+                                             'nox', 'rm', 'age', 'dis', 'rad',
+                                             'tax', 'ptratio', 'black',
+                                             'lstat'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('bin_numeric_features',
+                 TransformerWrapper(include=['lstat', 'age'],
+                                    transformer=KBinsDiscretizer(encode='ordinal',
+                                                                 strategy='kmeans'))),
+                ('transformation',
+                 TransformerWrapper(transformer=PowerTransformer(standardize=False))),
+                ('normalize',
+                 TransformerWrapper(transformer=StandardScaler()))])
+2025-03-26 13:59:49,923:INFO:Creating final display dataframe.
+2025-03-26 13:59:50,053:INFO:Setup _display_container:                     Description             Value
+0                    Session id              2011
+1                        Target              medv
+2                   Target type        Regression
+3           Original data shape         (506, 14)
+4        Transformed data shape         (506, 14)
+5   Transformed train set shape         (354, 14)
+6    Transformed test set shape         (152, 14)
+7              Numeric features                13
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Transformation              True
+13        Transformation method       yeo-johnson
+14                    Normalize              True
+15             Normalize method            zscore
+16               Fold Generator             KFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  reg-default-name
+22                          USI              926a
+2025-03-26 13:59:50,160:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:50,163:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:50,256:INFO:Soft dependency imported: xgboost: 2.1.4
+2025-03-26 13:59:50,258:INFO:Soft dependency imported: catboost: 1.2.7
+2025-03-26 13:59:50,260:INFO:setup() successfully completed in 1.98s...............
+2025-03-26 14:02:09,942:INFO:Initializing compare_models()
+2025-03-26 14:02:09,942:INFO:compare_models(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, include=None, fold=None, round=4, cross_validation=True, sort=R2, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'R2', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.regression.oop.RegressionExperiment'>}, exclude=None)
+2025-03-26 14:02:09,942:INFO:Checking exceptions
+2025-03-26 14:02:09,944:INFO:Preparing display monitor
+2025-03-26 14:02:09,976:INFO:Initializing Linear Regression
+2025-03-26 14:02:09,976:INFO:Total runtime is 0.0 minutes
+2025-03-26 14:02:09,981:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:09,982:INFO:Initializing create_model()
+2025-03-26 14:02:09,982:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=lr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:09,982:INFO:Checking exceptions
+2025-03-26 14:02:09,983:INFO:Importing libraries
+2025-03-26 14:02:09,983:INFO:Copying training dataset
+2025-03-26 14:02:09,988:INFO:Defining folds
+2025-03-26 14:02:09,988:INFO:Declaring metric variables
+2025-03-26 14:02:09,994:INFO:Importing untrained model
+2025-03-26 14:02:10,002:INFO:Linear Regression Imported successfully
+2025-03-26 14:02:10,015:INFO:Starting cross validation
+2025-03-26 14:02:10,035:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:18,762:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,763:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,771:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,772:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,772:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,790:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,793:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,794:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,816:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:18,819:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:19,127:INFO:Calculating mean and std
+2025-03-26 14:02:19,134:INFO:Creating metrics dataframe
+2025-03-26 14:02:19,142:INFO:Uploading results into container
+2025-03-26 14:02:19,146:INFO:Uploading model into container now
+2025-03-26 14:02:19,148:INFO:_master_model_container: 1
+2025-03-26 14:02:19,150:INFO:_display_container: 2
+2025-03-26 14:02:19,151:INFO:LinearRegression(n_jobs=-1)
+2025-03-26 14:02:19,152:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:19,414:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:19,415:INFO:Creating metrics dataframe
+2025-03-26 14:02:19,421:INFO:Initializing Lasso Regression
+2025-03-26 14:02:19,422:INFO:Total runtime is 0.1574396808942159 minutes
+2025-03-26 14:02:19,425:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:19,426:INFO:Initializing create_model()
+2025-03-26 14:02:19,426:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=lasso, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:19,426:INFO:Checking exceptions
+2025-03-26 14:02:19,426:INFO:Importing libraries
+2025-03-26 14:02:19,426:INFO:Copying training dataset
+2025-03-26 14:02:19,430:INFO:Defining folds
+2025-03-26 14:02:19,430:INFO:Declaring metric variables
+2025-03-26 14:02:19,434:INFO:Importing untrained model
+2025-03-26 14:02:19,438:INFO:Lasso Regression Imported successfully
+2025-03-26 14:02:19,445:INFO:Starting cross validation
+2025-03-26 14:02:19,446:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:19,481:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:19,488:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:19,493:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:19,505:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:19,516:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:19,528:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:19,537:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:19,546:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:22,980:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:22,981:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,135:INFO:Calculating mean and std
+2025-03-26 14:02:23,137:INFO:Creating metrics dataframe
+2025-03-26 14:02:23,139:INFO:Uploading results into container
+2025-03-26 14:02:23,140:INFO:Uploading model into container now
+2025-03-26 14:02:23,141:INFO:_master_model_container: 2
+2025-03-26 14:02:23,141:INFO:_display_container: 2
+2025-03-26 14:02:23,141:INFO:Lasso(random_state=2011)
+2025-03-26 14:02:23,141:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:23,305:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:23,305:INFO:Creating metrics dataframe
+2025-03-26 14:02:23,312:INFO:Initializing Ridge Regression
+2025-03-26 14:02:23,312:INFO:Total runtime is 0.2222754160563151 minutes
+2025-03-26 14:02:23,315:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:23,316:INFO:Initializing create_model()
+2025-03-26 14:02:23,316:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=ridge, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:23,316:INFO:Checking exceptions
+2025-03-26 14:02:23,316:INFO:Importing libraries
+2025-03-26 14:02:23,316:INFO:Copying training dataset
+2025-03-26 14:02:23,320:INFO:Defining folds
+2025-03-26 14:02:23,320:INFO:Declaring metric variables
+2025-03-26 14:02:23,323:INFO:Importing untrained model
+2025-03-26 14:02:23,327:INFO:Ridge Regression Imported successfully
+2025-03-26 14:02:23,334:INFO:Starting cross validation
+2025-03-26 14:02:23,335:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:23,358:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,362:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,367:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,374:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,379:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,390:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,395:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,403:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,410:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,424:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,494:INFO:Calculating mean and std
+2025-03-26 14:02:23,495:INFO:Creating metrics dataframe
+2025-03-26 14:02:23,497:INFO:Uploading results into container
+2025-03-26 14:02:23,497:INFO:Uploading model into container now
+2025-03-26 14:02:23,498:INFO:_master_model_container: 3
+2025-03-26 14:02:23,498:INFO:_display_container: 2
+2025-03-26 14:02:23,498:INFO:Ridge(random_state=2011)
+2025-03-26 14:02:23,498:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:23,647:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:23,648:INFO:Creating metrics dataframe
+2025-03-26 14:02:23,654:INFO:Initializing Elastic Net
+2025-03-26 14:02:23,654:INFO:Total runtime is 0.22797897259394326 minutes
+2025-03-26 14:02:23,657:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:23,658:INFO:Initializing create_model()
+2025-03-26 14:02:23,658:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=en, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:23,658:INFO:Checking exceptions
+2025-03-26 14:02:23,658:INFO:Importing libraries
+2025-03-26 14:02:23,658:INFO:Copying training dataset
+2025-03-26 14:02:23,663:INFO:Defining folds
+2025-03-26 14:02:23,663:INFO:Declaring metric variables
+2025-03-26 14:02:23,666:INFO:Importing untrained model
+2025-03-26 14:02:23,671:INFO:Elastic Net Imported successfully
+2025-03-26 14:02:23,678:INFO:Starting cross validation
+2025-03-26 14:02:23,679:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:23,703:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,708:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,714:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,718:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,723:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,733:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,739:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,752:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,763:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,774:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:23,836:INFO:Calculating mean and std
+2025-03-26 14:02:23,837:INFO:Creating metrics dataframe
+2025-03-26 14:02:23,838:INFO:Uploading results into container
+2025-03-26 14:02:23,840:INFO:Uploading model into container now
+2025-03-26 14:02:23,840:INFO:_master_model_container: 4
+2025-03-26 14:02:23,841:INFO:_display_container: 2
+2025-03-26 14:02:23,841:INFO:ElasticNet(random_state=2011)
+2025-03-26 14:02:23,841:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:23,991:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:23,991:INFO:Creating metrics dataframe
+2025-03-26 14:02:23,997:INFO:Initializing Least Angle Regression
+2025-03-26 14:02:23,997:INFO:Total runtime is 0.23369573752085365 minutes
+2025-03-26 14:02:24,001:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:24,001:INFO:Initializing create_model()
+2025-03-26 14:02:24,001:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=lar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:24,001:INFO:Checking exceptions
+2025-03-26 14:02:24,001:INFO:Importing libraries
+2025-03-26 14:02:24,001:INFO:Copying training dataset
+2025-03-26 14:02:24,006:INFO:Defining folds
+2025-03-26 14:02:24,006:INFO:Declaring metric variables
+2025-03-26 14:02:24,009:INFO:Importing untrained model
+2025-03-26 14:02:24,015:INFO:Least Angle Regression Imported successfully
+2025-03-26 14:02:24,029:INFO:Starting cross validation
+2025-03-26 14:02:24,032:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:24,071:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,078:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,088:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,090:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,097:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,100:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,109:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,114:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,126:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,136:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,212:INFO:Calculating mean and std
+2025-03-26 14:02:24,213:INFO:Creating metrics dataframe
+2025-03-26 14:02:24,215:INFO:Uploading results into container
+2025-03-26 14:02:24,216:INFO:Uploading model into container now
+2025-03-26 14:02:24,216:INFO:_master_model_container: 5
+2025-03-26 14:02:24,216:INFO:_display_container: 2
+2025-03-26 14:02:24,216:INFO:Lars(random_state=2011)
+2025-03-26 14:02:24,217:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:24,364:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:24,365:INFO:Creating metrics dataframe
+2025-03-26 14:02:24,372:INFO:Initializing Lasso Least Angle Regression
+2025-03-26 14:02:24,372:INFO:Total runtime is 0.23994435866673786 minutes
+2025-03-26 14:02:24,375:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:24,376:INFO:Initializing create_model()
+2025-03-26 14:02:24,376:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=llar, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:24,376:INFO:Checking exceptions
+2025-03-26 14:02:24,376:INFO:Importing libraries
+2025-03-26 14:02:24,376:INFO:Copying training dataset
+2025-03-26 14:02:24,380:INFO:Defining folds
+2025-03-26 14:02:24,380:INFO:Declaring metric variables
+2025-03-26 14:02:24,383:INFO:Importing untrained model
+2025-03-26 14:02:24,387:INFO:Lasso Least Angle Regression Imported successfully
+2025-03-26 14:02:24,394:INFO:Starting cross validation
+2025-03-26 14:02:24,395:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:24,417:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,421:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,424:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,428:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,438:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,445:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,448:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,457:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,465:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,473:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,554:INFO:Calculating mean and std
+2025-03-26 14:02:24,555:INFO:Creating metrics dataframe
+2025-03-26 14:02:24,556:INFO:Uploading results into container
+2025-03-26 14:02:24,557:INFO:Uploading model into container now
+2025-03-26 14:02:24,558:INFO:_master_model_container: 6
+2025-03-26 14:02:24,558:INFO:_display_container: 2
+2025-03-26 14:02:24,558:INFO:LassoLars(random_state=2011)
+2025-03-26 14:02:24,558:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:24,715:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:24,716:INFO:Creating metrics dataframe
+2025-03-26 14:02:24,722:INFO:Initializing Orthogonal Matching Pursuit
+2025-03-26 14:02:24,722:INFO:Total runtime is 0.24577762285868324 minutes
+2025-03-26 14:02:24,726:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:24,727:INFO:Initializing create_model()
+2025-03-26 14:02:24,727:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=omp, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:24,727:INFO:Checking exceptions
+2025-03-26 14:02:24,727:INFO:Importing libraries
+2025-03-26 14:02:24,727:INFO:Copying training dataset
+2025-03-26 14:02:24,731:INFO:Defining folds
+2025-03-26 14:02:24,731:INFO:Declaring metric variables
+2025-03-26 14:02:24,736:INFO:Importing untrained model
+2025-03-26 14:02:24,742:INFO:Orthogonal Matching Pursuit Imported successfully
+2025-03-26 14:02:24,750:INFO:Starting cross validation
+2025-03-26 14:02:24,751:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:24,778:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,784:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,791:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,796:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,802:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,812:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,816:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,825:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,833:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,844:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:24,912:INFO:Calculating mean and std
+2025-03-26 14:02:24,913:INFO:Creating metrics dataframe
+2025-03-26 14:02:24,915:INFO:Uploading results into container
+2025-03-26 14:02:24,916:INFO:Uploading model into container now
+2025-03-26 14:02:24,916:INFO:_master_model_container: 7
+2025-03-26 14:02:24,916:INFO:_display_container: 2
+2025-03-26 14:02:24,917:INFO:OrthogonalMatchingPursuit()
+2025-03-26 14:02:24,917:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:25,067:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:25,067:INFO:Creating metrics dataframe
+2025-03-26 14:02:25,074:INFO:Initializing Bayesian Ridge
+2025-03-26 14:02:25,074:INFO:Total runtime is 0.2516347527503967 minutes
+2025-03-26 14:02:25,077:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:25,077:INFO:Initializing create_model()
+2025-03-26 14:02:25,077:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=br, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:25,077:INFO:Checking exceptions
+2025-03-26 14:02:25,077:INFO:Importing libraries
+2025-03-26 14:02:25,078:INFO:Copying training dataset
+2025-03-26 14:02:25,081:INFO:Defining folds
+2025-03-26 14:02:25,081:INFO:Declaring metric variables
+2025-03-26 14:02:25,085:INFO:Importing untrained model
+2025-03-26 14:02:25,089:INFO:Bayesian Ridge Imported successfully
+2025-03-26 14:02:25,096:INFO:Starting cross validation
+2025-03-26 14:02:25,097:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:25,120:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,126:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,130:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,137:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,144:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,152:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,157:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,167:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,179:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,181:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,256:INFO:Calculating mean and std
+2025-03-26 14:02:25,257:INFO:Creating metrics dataframe
+2025-03-26 14:02:25,259:INFO:Uploading results into container
+2025-03-26 14:02:25,260:INFO:Uploading model into container now
+2025-03-26 14:02:25,260:INFO:_master_model_container: 8
+2025-03-26 14:02:25,260:INFO:_display_container: 2
+2025-03-26 14:02:25,260:INFO:BayesianRidge()
+2025-03-26 14:02:25,261:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:25,414:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:25,414:INFO:Creating metrics dataframe
+2025-03-26 14:02:25,420:INFO:Initializing Passive Aggressive Regressor
+2025-03-26 14:02:25,420:INFO:Total runtime is 0.25741571982701617 minutes
+2025-03-26 14:02:25,424:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:25,424:INFO:Initializing create_model()
+2025-03-26 14:02:25,424:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=par, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:25,424:INFO:Checking exceptions
+2025-03-26 14:02:25,424:INFO:Importing libraries
+2025-03-26 14:02:25,424:INFO:Copying training dataset
+2025-03-26 14:02:25,428:INFO:Defining folds
+2025-03-26 14:02:25,430:INFO:Declaring metric variables
+2025-03-26 14:02:25,433:INFO:Importing untrained model
+2025-03-26 14:02:25,437:INFO:Passive Aggressive Regressor Imported successfully
+2025-03-26 14:02:25,447:INFO:Starting cross validation
+2025-03-26 14:02:25,448:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:25,475:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,480:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,483:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,488:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,498:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,501:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,508:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,513:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,522:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,531:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,601:INFO:Calculating mean and std
+2025-03-26 14:02:25,602:INFO:Creating metrics dataframe
+2025-03-26 14:02:25,604:INFO:Uploading results into container
+2025-03-26 14:02:25,605:INFO:Uploading model into container now
+2025-03-26 14:02:25,605:INFO:_master_model_container: 9
+2025-03-26 14:02:25,606:INFO:_display_container: 2
+2025-03-26 14:02:25,606:INFO:PassiveAggressiveRegressor(random_state=2011)
+2025-03-26 14:02:25,606:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:25,755:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:25,755:INFO:Creating metrics dataframe
+2025-03-26 14:02:25,764:INFO:Initializing Huber Regressor
+2025-03-26 14:02:25,765:INFO:Total runtime is 0.2631554007530212 minutes
+2025-03-26 14:02:25,768:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:25,768:INFO:Initializing create_model()
+2025-03-26 14:02:25,768:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=huber, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:25,768:INFO:Checking exceptions
+2025-03-26 14:02:25,768:INFO:Importing libraries
+2025-03-26 14:02:25,768:INFO:Copying training dataset
+2025-03-26 14:02:25,773:INFO:Defining folds
+2025-03-26 14:02:25,773:INFO:Declaring metric variables
+2025-03-26 14:02:25,776:INFO:Importing untrained model
+2025-03-26 14:02:25,779:INFO:Huber Regressor Imported successfully
+2025-03-26 14:02:25,786:INFO:Starting cross validation
+2025-03-26 14:02:25,787:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:25,810:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,815:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,822:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,822:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,832:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,832:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,840:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,844:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,857:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,868:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:25,961:INFO:Calculating mean and std
+2025-03-26 14:02:25,962:INFO:Creating metrics dataframe
+2025-03-26 14:02:25,964:INFO:Uploading results into container
+2025-03-26 14:02:25,965:INFO:Uploading model into container now
+2025-03-26 14:02:25,965:INFO:_master_model_container: 10
+2025-03-26 14:02:25,966:INFO:_display_container: 2
+2025-03-26 14:02:25,966:INFO:HuberRegressor()
+2025-03-26 14:02:25,966:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:26,115:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:26,115:INFO:Creating metrics dataframe
+2025-03-26 14:02:26,123:INFO:Initializing K Neighbors Regressor
+2025-03-26 14:02:26,123:INFO:Total runtime is 0.26912522713343295 minutes
+2025-03-26 14:02:26,126:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:26,127:INFO:Initializing create_model()
+2025-03-26 14:02:26,127:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=knn, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:26,127:INFO:Checking exceptions
+2025-03-26 14:02:26,127:INFO:Importing libraries
+2025-03-26 14:02:26,127:INFO:Copying training dataset
+2025-03-26 14:02:26,131:INFO:Defining folds
+2025-03-26 14:02:26,131:INFO:Declaring metric variables
+2025-03-26 14:02:26,136:INFO:Importing untrained model
+2025-03-26 14:02:26,139:INFO:K Neighbors Regressor Imported successfully
+2025-03-26 14:02:26,146:INFO:Starting cross validation
+2025-03-26 14:02:26,147:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:26,170:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,173:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,178:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,184:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,188:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,195:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,209:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,216:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,223:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,233:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,349:INFO:Calculating mean and std
+2025-03-26 14:02:26,350:INFO:Creating metrics dataframe
+2025-03-26 14:02:26,352:INFO:Uploading results into container
+2025-03-26 14:02:26,353:INFO:Uploading model into container now
+2025-03-26 14:02:26,353:INFO:_master_model_container: 11
+2025-03-26 14:02:26,354:INFO:_display_container: 2
+2025-03-26 14:02:26,354:INFO:KNeighborsRegressor(n_jobs=-1)
+2025-03-26 14:02:26,354:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:26,526:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:26,526:INFO:Creating metrics dataframe
+2025-03-26 14:02:26,533:INFO:Initializing Decision Tree Regressor
+2025-03-26 14:02:26,533:INFO:Total runtime is 0.27595779498418166 minutes
+2025-03-26 14:02:26,538:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:26,538:INFO:Initializing create_model()
+2025-03-26 14:02:26,538:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=dt, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:26,538:INFO:Checking exceptions
+2025-03-26 14:02:26,538:INFO:Importing libraries
+2025-03-26 14:02:26,538:INFO:Copying training dataset
+2025-03-26 14:02:26,542:INFO:Defining folds
+2025-03-26 14:02:26,542:INFO:Declaring metric variables
+2025-03-26 14:02:26,545:INFO:Importing untrained model
+2025-03-26 14:02:26,550:INFO:Decision Tree Regressor Imported successfully
+2025-03-26 14:02:26,557:INFO:Starting cross validation
+2025-03-26 14:02:26,558:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:26,581:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,584:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,589:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,594:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,600:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,609:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,616:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,623:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,628:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,640:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,721:INFO:Calculating mean and std
+2025-03-26 14:02:26,722:INFO:Creating metrics dataframe
+2025-03-26 14:02:26,724:INFO:Uploading results into container
+2025-03-26 14:02:26,725:INFO:Uploading model into container now
+2025-03-26 14:02:26,725:INFO:_master_model_container: 12
+2025-03-26 14:02:26,725:INFO:_display_container: 2
+2025-03-26 14:02:26,726:INFO:DecisionTreeRegressor(random_state=2011)
+2025-03-26 14:02:26,726:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:26,882:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:26,882:INFO:Creating metrics dataframe
+2025-03-26 14:02:26,891:INFO:Initializing Random Forest Regressor
+2025-03-26 14:02:26,891:INFO:Total runtime is 0.28192056020100903 minutes
+2025-03-26 14:02:26,895:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:26,895:INFO:Initializing create_model()
+2025-03-26 14:02:26,895:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=rf, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:26,895:INFO:Checking exceptions
+2025-03-26 14:02:26,895:INFO:Importing libraries
+2025-03-26 14:02:26,895:INFO:Copying training dataset
+2025-03-26 14:02:26,900:INFO:Defining folds
+2025-03-26 14:02:26,900:INFO:Declaring metric variables
+2025-03-26 14:02:26,903:INFO:Importing untrained model
+2025-03-26 14:02:26,908:INFO:Random Forest Regressor Imported successfully
+2025-03-26 14:02:26,918:INFO:Starting cross validation
+2025-03-26 14:02:26,919:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:26,945:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,950:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,955:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,960:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,968:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,975:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,980:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,983:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:26,993:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,003:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,595:INFO:Calculating mean and std
+2025-03-26 14:02:27,596:INFO:Creating metrics dataframe
+2025-03-26 14:02:27,598:INFO:Uploading results into container
+2025-03-26 14:02:27,598:INFO:Uploading model into container now
+2025-03-26 14:02:27,598:INFO:_master_model_container: 13
+2025-03-26 14:02:27,598:INFO:_display_container: 2
+2025-03-26 14:02:27,600:INFO:RandomForestRegressor(n_jobs=-1, random_state=2011)
+2025-03-26 14:02:27,600:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:27,755:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:27,756:INFO:Creating metrics dataframe
+2025-03-26 14:02:27,764:INFO:Initializing Extra Trees Regressor
+2025-03-26 14:02:27,764:INFO:Total runtime is 0.2964796304702758 minutes
+2025-03-26 14:02:27,768:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:27,768:INFO:Initializing create_model()
+2025-03-26 14:02:27,768:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:27,768:INFO:Checking exceptions
+2025-03-26 14:02:27,768:INFO:Importing libraries
+2025-03-26 14:02:27,768:INFO:Copying training dataset
+2025-03-26 14:02:27,773:INFO:Defining folds
+2025-03-26 14:02:27,773:INFO:Declaring metric variables
+2025-03-26 14:02:27,776:INFO:Importing untrained model
+2025-03-26 14:02:27,780:INFO:Extra Trees Regressor Imported successfully
+2025-03-26 14:02:27,787:INFO:Starting cross validation
+2025-03-26 14:02:27,788:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:27,812:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,817:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,820:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,828:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,834:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,842:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,852:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,861:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,866:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:27,881:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,283:INFO:Calculating mean and std
+2025-03-26 14:02:28,284:INFO:Creating metrics dataframe
+2025-03-26 14:02:28,287:INFO:Uploading results into container
+2025-03-26 14:02:28,288:INFO:Uploading model into container now
+2025-03-26 14:02:28,289:INFO:_master_model_container: 14
+2025-03-26 14:02:28,289:INFO:_display_container: 2
+2025-03-26 14:02:28,290:INFO:ExtraTreesRegressor(n_jobs=-1, random_state=2011)
+2025-03-26 14:02:28,290:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:28,444:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:28,444:INFO:Creating metrics dataframe
+2025-03-26 14:02:28,453:INFO:Initializing AdaBoost Regressor
+2025-03-26 14:02:28,453:INFO:Total runtime is 0.3079654693603515 minutes
+2025-03-26 14:02:28,457:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:28,458:INFO:Initializing create_model()
+2025-03-26 14:02:28,458:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:28,458:INFO:Checking exceptions
+2025-03-26 14:02:28,458:INFO:Importing libraries
+2025-03-26 14:02:28,458:INFO:Copying training dataset
+2025-03-26 14:02:28,462:INFO:Defining folds
+2025-03-26 14:02:28,462:INFO:Declaring metric variables
+2025-03-26 14:02:28,466:INFO:Importing untrained model
+2025-03-26 14:02:28,470:INFO:AdaBoost Regressor Imported successfully
+2025-03-26 14:02:28,478:INFO:Starting cross validation
+2025-03-26 14:02:28,478:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:28,501:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,506:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,509:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,514:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,520:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,525:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,539:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,543:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,552:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,564:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,765:INFO:Calculating mean and std
+2025-03-26 14:02:28,766:INFO:Creating metrics dataframe
+2025-03-26 14:02:28,768:INFO:Uploading results into container
+2025-03-26 14:02:28,768:INFO:Uploading model into container now
+2025-03-26 14:02:28,770:INFO:_master_model_container: 15
+2025-03-26 14:02:28,770:INFO:_display_container: 2
+2025-03-26 14:02:28,770:INFO:AdaBoostRegressor(random_state=2011)
+2025-03-26 14:02:28,770:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:28,921:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:28,921:INFO:Creating metrics dataframe
+2025-03-26 14:02:28,928:INFO:Initializing Gradient Boosting Regressor
+2025-03-26 14:02:28,928:INFO:Total runtime is 0.315874965985616 minutes
+2025-03-26 14:02:28,932:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:28,932:INFO:Initializing create_model()
+2025-03-26 14:02:28,933:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:28,933:INFO:Checking exceptions
+2025-03-26 14:02:28,933:INFO:Importing libraries
+2025-03-26 14:02:28,933:INFO:Copying training dataset
+2025-03-26 14:02:28,937:INFO:Defining folds
+2025-03-26 14:02:28,938:INFO:Declaring metric variables
+2025-03-26 14:02:28,941:INFO:Importing untrained model
+2025-03-26 14:02:28,945:INFO:Gradient Boosting Regressor Imported successfully
+2025-03-26 14:02:28,954:INFO:Starting cross validation
+2025-03-26 14:02:28,955:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:28,984:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,990:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,995:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:28,999:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,007:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,017:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,022:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,031:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,042:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,054:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,311:INFO:Calculating mean and std
+2025-03-26 14:02:29,312:INFO:Creating metrics dataframe
+2025-03-26 14:02:29,314:INFO:Uploading results into container
+2025-03-26 14:02:29,314:INFO:Uploading model into container now
+2025-03-26 14:02:29,315:INFO:_master_model_container: 16
+2025-03-26 14:02:29,315:INFO:_display_container: 2
+2025-03-26 14:02:29,315:INFO:GradientBoostingRegressor(random_state=2011)
+2025-03-26 14:02:29,316:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:29,466:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:29,466:INFO:Creating metrics dataframe
+2025-03-26 14:02:29,474:INFO:Initializing Extreme Gradient Boosting
+2025-03-26 14:02:29,475:INFO:Total runtime is 0.3249862631162007 minutes
+2025-03-26 14:02:29,478:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:29,479:INFO:Initializing create_model()
+2025-03-26 14:02:29,479:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=xgboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:29,479:INFO:Checking exceptions
+2025-03-26 14:02:29,479:INFO:Importing libraries
+2025-03-26 14:02:29,479:INFO:Copying training dataset
+2025-03-26 14:02:29,483:INFO:Defining folds
+2025-03-26 14:02:29,483:INFO:Declaring metric variables
+2025-03-26 14:02:29,486:INFO:Importing untrained model
+2025-03-26 14:02:29,490:INFO:Extreme Gradient Boosting Imported successfully
+2025-03-26 14:02:29,500:INFO:Starting cross validation
+2025-03-26 14:02:29,502:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:29,571:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,575:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,586:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,595:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,603:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,610:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,620:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,628:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,637:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:29,653:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:30,915:INFO:Calculating mean and std
+2025-03-26 14:02:30,916:INFO:Creating metrics dataframe
+2025-03-26 14:02:30,918:INFO:Uploading results into container
+2025-03-26 14:02:30,919:INFO:Uploading model into container now
+2025-03-26 14:02:30,919:INFO:_master_model_container: 17
+2025-03-26 14:02:30,919:INFO:_display_container: 2
+2025-03-26 14:02:30,920:INFO:XGBRegressor(base_score=None, booster='gbtree', callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device='cpu', early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=-1,
+             num_parallel_tree=None, random_state=2011, ...)
+2025-03-26 14:02:30,920:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:31,077:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:31,077:INFO:Creating metrics dataframe
+2025-03-26 14:02:31,087:INFO:Initializing Light Gradient Boosting Machine
+2025-03-26 14:02:31,087:INFO:Total runtime is 0.35185146331787104 minutes
+2025-03-26 14:02:31,091:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:31,092:INFO:Initializing create_model()
+2025-03-26 14:02:31,092:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:31,092:INFO:Checking exceptions
+2025-03-26 14:02:31,092:INFO:Importing libraries
+2025-03-26 14:02:31,092:INFO:Copying training dataset
+2025-03-26 14:02:31,096:INFO:Defining folds
+2025-03-26 14:02:31,097:INFO:Declaring metric variables
+2025-03-26 14:02:31,100:INFO:Importing untrained model
+2025-03-26 14:02:31,106:INFO:Light Gradient Boosting Machine Imported successfully
+2025-03-26 14:02:31,114:INFO:Starting cross validation
+2025-03-26 14:02:31,115:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:31,151:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,157:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,165:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,177:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,191:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,213:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,222:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,249:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,267:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:31,361:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:33,624:INFO:Calculating mean and std
+2025-03-26 14:02:33,626:INFO:Creating metrics dataframe
+2025-03-26 14:02:33,628:INFO:Uploading results into container
+2025-03-26 14:02:33,630:INFO:Uploading model into container now
+2025-03-26 14:02:33,631:INFO:_master_model_container: 18
+2025-03-26 14:02:33,631:INFO:_display_container: 2
+2025-03-26 14:02:33,632:INFO:LGBMRegressor(n_jobs=-1, random_state=2011)
+2025-03-26 14:02:33,632:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:33,817:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:33,818:INFO:Creating metrics dataframe
+2025-03-26 14:02:33,829:INFO:Initializing CatBoost Regressor
+2025-03-26 14:02:33,829:INFO:Total runtime is 0.3975499788920084 minutes
+2025-03-26 14:02:33,832:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:33,832:INFO:Initializing create_model()
+2025-03-26 14:02:33,833:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=catboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:33,833:INFO:Checking exceptions
+2025-03-26 14:02:33,833:INFO:Importing libraries
+2025-03-26 14:02:33,833:INFO:Copying training dataset
+2025-03-26 14:02:33,838:INFO:Defining folds
+2025-03-26 14:02:33,838:INFO:Declaring metric variables
+2025-03-26 14:02:33,841:INFO:Importing untrained model
+2025-03-26 14:02:33,849:INFO:CatBoost Regressor Imported successfully
+2025-03-26 14:02:33,858:INFO:Starting cross validation
+2025-03-26 14:02:33,860:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:35,214:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:35,215:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:35,215:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:35,216:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:35,217:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:35,218:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:35,221:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:35,221:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:35,272:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:36,935:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\model_selection\_validation.py:547: FitFailedWarning: 
+9 fits failed out of a total of 10.
+The score on these train-test partitions for these parameters will be set to 0.0.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+9 fits failed with the following error:
+Traceback (most recent call last):
+  File "c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 895, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\pycaret\internal\pipeline.py", line 278, in fit
+    fitted_estimator = self._memory_fit(
+  File "c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\joblib\memory.py", line 353, in __call__
+    return self.func(*args, **kwargs)
+  File "c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\pycaret\internal\pipeline.py", line 69, in _fit_one
+    transformer.fit(*args)
+  File "c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\catboost\core.py", line 5873, in fit
+    return self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline,
+  File "c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\catboost\core.py", line 2410, in _fit
+    self._train(
+  File "c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\catboost\core.py", line 1790, in _train
+    self._object._train(train_pool, test_pool, params, allow_clear_pool, init_model._object if init_model else None)
+  File "_catboost.pyx", line 5017, in _catboost._CatBoost._train
+  File "_catboost.pyx", line 5066, in _catboost._CatBoost._train
+_catboost.CatBoostError: catboost/libs/train_lib/dir_helper.cpp:20: Can't create train working dir: catboost_info
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+
+2025-03-26 14:02:36,936:INFO:Calculating mean and std
+2025-03-26 14:02:36,937:INFO:Creating metrics dataframe
+2025-03-26 14:02:36,939:INFO:Uploading results into container
+2025-03-26 14:02:36,940:INFO:Uploading model into container now
+2025-03-26 14:02:36,941:INFO:_master_model_container: 19
+2025-03-26 14:02:36,941:INFO:_display_container: 2
+2025-03-26 14:02:36,941:INFO:<catboost.core.CatBoostRegressor object at 0x000001AF29EC1F70>
+2025-03-26 14:02:36,942:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:37,100:WARNING:create_model() for <catboost.core.CatBoostRegressor object at 0x000001AF29EC1F70> raised an exception or returned all 0.0, trying without fit_kwargs:
+2025-03-26 14:02:37,101:WARNING:Traceback (most recent call last):
+  File "c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    assert (
+AssertionError
+
+2025-03-26 14:02:37,101:INFO:Initializing create_model()
+2025-03-26 14:02:37,101:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=catboost, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:37,102:INFO:Checking exceptions
+2025-03-26 14:02:37,102:INFO:Importing libraries
+2025-03-26 14:02:37,102:INFO:Copying training dataset
+2025-03-26 14:02:37,106:INFO:Defining folds
+2025-03-26 14:02:37,106:INFO:Declaring metric variables
+2025-03-26 14:02:37,110:INFO:Importing untrained model
+2025-03-26 14:02:37,114:INFO:CatBoost Regressor Imported successfully
+2025-03-26 14:02:37,121:INFO:Starting cross validation
+2025-03-26 14:02:37,122:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:37,157:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:37,162:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:37,171:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:37,177:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:37,187:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:37,193:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:37,206:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:37,219:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:40,404:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:40,429:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:43,780:INFO:Calculating mean and std
+2025-03-26 14:02:43,782:INFO:Creating metrics dataframe
+2025-03-26 14:02:43,784:INFO:Uploading results into container
+2025-03-26 14:02:43,785:INFO:Uploading model into container now
+2025-03-26 14:02:43,785:INFO:_master_model_container: 20
+2025-03-26 14:02:43,786:INFO:_display_container: 2
+2025-03-26 14:02:43,786:INFO:<catboost.core.CatBoostRegressor object at 0x000001AF29EC1D30>
+2025-03-26 14:02:43,786:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:43,991:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:43,992:INFO:Creating metrics dataframe
+2025-03-26 14:02:44,003:INFO:Initializing Dummy Regressor
+2025-03-26 14:02:44,003:INFO:Total runtime is 0.5671288609504699 minutes
+2025-03-26 14:02:44,007:INFO:SubProcess create_model() called ==================================
+2025-03-26 14:02:44,007:INFO:Initializing create_model()
+2025-03-26 14:02:44,007:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001AF2534B2E0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:44,007:INFO:Checking exceptions
+2025-03-26 14:02:44,007:INFO:Importing libraries
+2025-03-26 14:02:44,007:INFO:Copying training dataset
+2025-03-26 14:02:44,012:INFO:Defining folds
+2025-03-26 14:02:44,012:INFO:Declaring metric variables
+2025-03-26 14:02:44,015:INFO:Importing untrained model
+2025-03-26 14:02:44,020:INFO:Dummy Regressor Imported successfully
+2025-03-26 14:02:44,026:INFO:Starting cross validation
+2025-03-26 14:02:44,028:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-03-26 14:02:44,065:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,076:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,081:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,087:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,103:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,114:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,126:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,140:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,154:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,182:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,276:INFO:Calculating mean and std
+2025-03-26 14:02:44,280:INFO:Creating metrics dataframe
+2025-03-26 14:02:44,282:INFO:Uploading results into container
+2025-03-26 14:02:44,283:INFO:Uploading model into container now
+2025-03-26 14:02:44,284:INFO:_master_model_container: 21
+2025-03-26 14:02:44,284:INFO:_display_container: 2
+2025-03-26 14:02:44,284:INFO:DummyRegressor()
+2025-03-26 14:02:44,284:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:44,436:INFO:SubProcess create_model() end ==================================
+2025-03-26 14:02:44,436:INFO:Creating metrics dataframe
+2025-03-26 14:02:44,446:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py:323: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  master_display_.apply(
+
+2025-03-26 14:02:44,453:INFO:Initializing create_model()
+2025-03-26 14:02:44,453:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, estimator=<catboost.core.CatBoostRegressor object at 0x000001AF29EC1D30>, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-03-26 14:02:44,453:INFO:Checking exceptions
+2025-03-26 14:02:44,455:INFO:Importing libraries
+2025-03-26 14:02:44,455:INFO:Copying training dataset
+2025-03-26 14:02:44,458:INFO:Defining folds
+2025-03-26 14:02:44,458:INFO:Declaring metric variables
+2025-03-26 14:02:44,460:INFO:Importing untrained model
+2025-03-26 14:02:44,460:INFO:Declaring custom model
+2025-03-26 14:02:44,460:INFO:CatBoost Regressor Imported successfully
+2025-03-26 14:02:44,461:INFO:Cross validation set to False
+2025-03-26 14:02:44,461:INFO:Fitting Model
+2025-03-26 14:02:44,468:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\preprocessing\_discretization.py:248: FutureWarning: In version 1.5 onwards, subsample=200_000 will be used by default. Set subsample explicitly to silence this warning in the mean time. Set subsample=None to disable subsampling explicitly.
+  warnings.warn(
+
+2025-03-26 14:02:44,469:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+
+2025-03-26 14:02:44,474:WARNING:c:\Users\Kelvin Rizky\miniconda3\lib\site-packages\sklearn\cluster\_kmeans.py:1446: UserWarning: KMeans is known to have a memory leak on Windows with MKL, when there are less chunks than available threads. You can avoid it by setting the environment variable OMP_NUM_THREADS=2.
+  warnings.warn(
+
+2025-03-26 14:02:45,971:INFO:<catboost.core.CatBoostRegressor object at 0x000001AF2A06D2E0>
+2025-03-26 14:02:45,971:INFO:create_model() successfully completed......................................
+2025-03-26 14:02:46,174:INFO:_master_model_container: 21
+2025-03-26 14:02:46,174:INFO:_display_container: 2
+2025-03-26 14:02:46,174:INFO:<catboost.core.CatBoostRegressor object at 0x000001AF2A06D2E0>
+2025-03-26 14:02:46,174:INFO:compare_models() successfully completed......................................
+2025-03-26 14:09:26,260:INFO:Initializing plot_model()
+2025-03-26 14:09:26,260:INFO:plot_model(plot=featute, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostRegressor object at 0x000001AF2A06D2E0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, system=True)
+2025-03-26 14:09:26,260:INFO:Checking exceptions
+2025-03-26 14:09:30,836:INFO:Initializing plot_model()
+2025-03-26 14:09:30,836:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostRegressor object at 0x000001AF2A06D2E0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, system=True)
+2025-03-26 14:09:30,837:INFO:Checking exceptions
+2025-03-26 14:09:30,843:INFO:Preloading libraries
+2025-03-26 14:09:30,848:INFO:Copying training dataset
+2025-03-26 14:09:30,849:INFO:Plot type: feature
+2025-03-26 14:09:30,850:WARNING:No coef_ found. Trying feature_importances_
+2025-03-26 14:09:31,017:INFO:Visual Rendered Successfully
+2025-03-26 14:09:31,192:INFO:plot_model() successfully completed......................................
+2025-03-26 14:12:03,168:INFO:Initializing plot_model()
+2025-03-26 14:12:03,170:INFO:plot_model(plot=residuals, fold=None, verbose=True, display=None, display_format=None, estimator=<catboost.core.CatBoostRegressor object at 0x000001AF2A06D2E0>, feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.regression.oop.RegressionExperiment object at 0x000001AF295259D0>, system=True)
+2025-03-26 14:12:03,170:INFO:Checking exceptions
+2025-03-26 14:12:03,175:INFO:Preloading libraries
+2025-03-26 14:12:03,178:INFO:Copying training dataset
+2025-03-26 14:12:03,179:INFO:Plot type: residuals
+2025-03-26 14:12:03,334:INFO:Fitting Model
+2025-03-26 14:12:03,374:INFO:Scoring test/hold-out set
+2025-03-26 14:12:03,779:INFO:Visual Rendered Successfully
+2025-03-26 14:12:03,951:INFO:plot_model() successfully completed......................................
